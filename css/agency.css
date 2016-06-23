@@ -1,4 +1,54 @@
+/*-----------------------AJOUT FONT------------------------*/
+@font-face {
+    font-family: Adam;
+    src: url(../fonts/adam/Adam.otf);
+}
+
+@font-face {
+    font-family: JosefinSansR;
+    src: url(../fonts/josefin-sans/JosefinSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: JosefinSansB;
+    src: url(../fonts/josefin-sans/JosefinSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: JosefinSansSB;
+    src: url(../fonts/josefin-sans/JosefinSans-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: CaviarDreams;
+    src: url(../fonts/caviar_dreams/CaviarDreams.ttf);
+}
+
+/*---------------------------------------------------------*/
+
 /*---------------------AJOUT CSS CLASS---------------------*/
+
+
+@media(min-width:767px){
+    .back_skills{
+    background-image: url(../img/skills/skills2.png);
+    height: 1500px;
+}
+
+.back_skills .text-muted{
+    color: white;
+    font-family: "JosefinSansR";
+    font-size: 18px;
+}
+
+.back_skills , subheading h4{
+    color: #ff6633;
+    font-family: "JosefinSansB";
+    font-size: 60px;
+   }
+}
+
+
 .logo_menu {
     width: 50px;
     height: 50px;
@@ -140,23 +190,7 @@
 }
 
 
-/*-----------------------AJOUT FONT------------------------*/
-@font-face {
-    font-family: Adam;
-    src: url(../fonts/adam/Adam.otf);
-}
 
-@font-face {
-    font-family: JosefinSansR;
-    src: url(../fonts/josefin-sans/JosefinSans-Regular.ttf);
-}
-
-@font-face {
-    font-family: CaviarDreams;
-    src: url(../fonts/caviar_dreams/CaviarDreams.ttf);
-}
-
-/*---------------------------------------------------------*/
 
 
 body {
@@ -164,12 +198,30 @@ body {
     font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif
 }
 
-.text-muted {
-    color: #777
+
+.qui , text-muted {
+    color: #ff9933;
 }
 
+.row text-right ,.qui , text-muted {
+    color: #ff9933;
+    width: 600px;
+    height: 375px;
+    font-size: 21px;
+    float: right;
+    font-family: "JosefinSansR";
+    font-weight: 500;
+    word-spacing: 10px;
+    
+}
+
+.qui span{
+    font-family: "JosefinSansSB";
+}
+
+
 .text-primary {
-    color: #fed136
+    color: #fed136;
 }
 
 p {
@@ -201,26 +253,31 @@ a.active {
 }
 
 h1,
-h2,
 h3,
 h4,
 h5,
 h6 {
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
-    font-weight: 700
+    font-weight: 700;
+}
+
+h2{
+    font-family: "CaviarDreams";
+    font-size: 25px;
+    color: #ff6633;
 }
 
 .img-centered {
-    margin: 0 auto
+    margin: 0 auto;
 }
 
 .bg-light-gray {
-    background-color: #f7f7f7
+    background-color: #f7f7f7;
 }
 
 .bg-darkest-gray {
-    background-color: #222
+    background-color: #222;
 }
 
 .btn-primary {
@@ -239,7 +296,7 @@ h6 {
 .open .dropdown-toggle.btn-primary {
     color: #fff;
     background-color: #fec503;
-    border-color: #f6bf01
+    border-color: white;
 }
 
 .btn-primary:active,
@@ -264,7 +321,7 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
     background-color: #fed136;
-    border-color: #fed136
+    border-color: white;
 }
 
 .btn-primary .badge {
@@ -285,6 +342,28 @@ fieldset[disabled] .btn-primary.active {
     margin-top: -10px;
 }
 
+.cv{
+    color: #ff6666;
+    background-color: #ffcc99;
+    font-family: "CaviarDreams";
+    text-transform: lowercase;
+    font-weight: 500;
+    border-radius: 6px;
+    font-size: 20px;
+    padding-top: 5 auto;
+    margin-top: 15px;
+    float: right;
+}
+
+.cv:hover,
+.cv:focus,
+.cv:active{
+    color: #fff;
+    background-color: #fec503;
+    border-color: white;
+    text-decoration: none;
+}
+
 .btn-xl:hover,
 .btn-xl:focus,
 .btn-xl:active,
@@ -292,7 +371,7 @@ fieldset[disabled] .btn-primary.active {
 .open .dropdown-toggle.btn-xl {
     color: #fff;
     background-color: #fec503;
-    border-color: #f6bf01;
+    border-color: white;
 }
 
 .btn-xl:active,
@@ -317,7 +396,7 @@ fieldset[disabled] .btn-xl:active,
 .btn-xl[disabled].active,
 fieldset[disabled] .btn-xl.active {
     background-color: #fed136;
-    border-color: #fed136
+    border-color: white;
 }
 
 .btn-xl .badge {
@@ -336,8 +415,17 @@ fieldset[disabled] .btn-xl.active {
 
 
 /*---------------------RESPONSIVE FIRST---------------------*/
+
+.arrow{
+    width: 20px;
+    height: 50px;
+    padding: auto;
+    margin: auto;
+    
+}
+
 header {
-    background-image: url(../img/home/header.jpg);
+   background-image: url(../img/home/big_light.jpg);
     background-repeat: none;
     background-attachment: scroll;
     background-position: center center;
@@ -352,7 +440,6 @@ header {
 }
 
 
-
 header .intro-text {
     padding-top: 100px;
     padding-bottom: 150px;
@@ -364,6 +451,7 @@ header .intro-text .intro-lead-in {
     font-weight: bold;
     word-spacing: -30px;
     letter-spacing: 25px;
+    text-shadow: 3px 0px 4px rgba(183, 186, 173, 1);
     text-transform: uppercase;
     font-size: 25px;
     line-height: 22px;
@@ -374,6 +462,7 @@ header .intro-text .intro-lead-in {
 header .intro-text .intro-heading {
     font-family: "JosefinSansR";
     text-transform: uppercase;
+    text-shadow: 3px 0px 4px rgba(183, 186, 173, 1);
     font-size: 15px;
     line-height: 15px;
     margin-bottom: 20px;
@@ -386,6 +475,10 @@ header img{
     margin-top: -50px;
 }
 
+.photo_profile{
+  
+}
+
 
 /*---------------------PLEINE PAGE PAS RESPONSIVE---------------------*/
 @media (min-width:768px) {
@@ -396,6 +489,7 @@ header img{
     header .intro-text .intro-lead-in {
         font-family: "Adam";
         font-weight: bold;
+        text-shadow: 3px 0px 4px rgba(89, 89, 89, 1);
         word-spacing: -30px;
         letter-spacing: 25px;
         text-transform: uppercase;
@@ -408,6 +502,7 @@ header img{
      header .intro-text .intro-heading {
         font-family: "JosefinSansR";
         text-transform: uppercase;
+        text-shadow: 3px 0px 4px rgba(89, 89, 89, 1);
         font-size: 30px;
         line-height: 75px;
         margin-bottom: 20px;
@@ -416,7 +511,7 @@ header img{
     
 
     header {
-    background-image: url(../img/home/header.jpg);
+    background-image: url(../img/home/big_light.jpg);
     background-repeat: none;
     background-attachment: scroll;
     background-position: center center;
@@ -434,6 +529,14 @@ header img{
     margin-bottom: -290px;
     margin-top: -430px
 }
+    
+    .arrow{
+    width: 40px;
+    height: 50px;
+    padding: auto;
+    margin: auto;
+    
+}
 }
 
 
@@ -448,13 +551,17 @@ section h2.section-heading {
     margin-bottom: 15px
 }
 
+.section-heading{
+vertical-align: top;
+}
+
+
 section h3.section-subheading {
     font-size: 16px;
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "JosefinSansR", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: none;
-    font-style: italic;
     font-weight: 400;
-    margin-bottom: 75px
+    margin-bottom: 75px;
 }
 
 @media (min-width:768px) {
@@ -559,7 +666,9 @@ section h3.section-subheading {
     width: 2px;
     background-color: #f1f1f1;
     left: 40px;
-    margin-left: -1.5px
+    margin-left: -1.5px;
+    height: 980px;
+    
 }
 
 .timeline>li {
@@ -607,10 +716,10 @@ section h3.section-subheading {
     height: 80px;
     position: absolute;
     z-index: 100;
-    background-color: #fed136;
+    background-color: white;
     color: #fff;
-    border-radius: 100%;
-    border: 7px solid #f1f1f1;
+    border-radius: 50%;
+    border: 7px solid #ff6633;
     text-align: center;
 }
 
@@ -646,11 +755,21 @@ section h3.section-subheading {
 
 .timeline .timeline-heading h4 {
     margin-top: 0;
-    color: inherit
+    color: #ff6633;
 }
 
 .timeline .timeline-heading h4.subheading {
-    text-transform: none
+    text-transform: none;
+    font-size: 22px;
+    color: #ff6633;
+    font-family: "JosefinSansB";
+}
+
+.timeline .timeline-heading h4.light-color {
+    text-transform: none;
+    font-size: 22px;
+    color: #ffcccc;
+    font-family: "JosefinSansB";
 }
 
 .timeline .timeline-body>p,
