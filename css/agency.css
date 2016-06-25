@@ -28,6 +28,15 @@
 
 /*---------------------AJOUT CSS CLASS---------------------*/
 
+.back_skills{
+    background-image: url(../img/skills/skills2.png);
+}
+
+.back_skills .text-muted{
+    color: white;
+    font-family: "JosefinSansR";
+    font-size: 18px;
+}
 
 @media(min-width:767px){
     .back_skills{
@@ -38,7 +47,7 @@
 .back_skills .text-muted{
     color: white;
     font-family: "JosefinSansR";
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .back_skills , subheading h4{
@@ -64,10 +73,18 @@
         padding: 20px 0;
         border-bottom: 0;
         letter-spacing: 1px;
-        background: 0 0;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
+        top:0;
+        padding-left: 25px;
+        position: fixed;
+        background: #fff;
+	z-index: 9999;
+	width:100%;
+    box-sizing:border-box;
+	border-bottom: 1px solid #eee;
+	box-shadow:0px 0px 20px rgba(0, 0, 0, 0.1);
     }
 
     .top-nav-collapse {
@@ -95,6 +112,24 @@
 .navbar {
     margin-bottom: 0;
 }
+
+.navbar {
+        padding: 20px 0;
+        border-bottom: 0;
+        letter-spacing: 1px;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+        top:0;
+        padding-left: 25px;
+        position: fixed;
+        background: #fff;
+	z-index: 9999;
+	width:100%;
+    box-sizing:border-box;
+	border-bottom: 1px solid #eee;
+	box-shadow:0px 0px 20px rgba(0, 0, 0, 0.1);
+    }
 
 .navbar-brand {
     font-weight: 700;
@@ -131,7 +166,7 @@
 }
 
 .navbar-custom ul.nav ul.dropdown-menu {
-	  border-radius: 0;	
+		
 	margin-top: 21px;
 	border-top: none;
 }
@@ -203,17 +238,17 @@ body {
     color: #ff9933;
 }
 
+
 .row text-right ,.qui , text-muted {
     color: #ff9933;
-    width: 600px;
+    width: 500px;
     height: 375px;
-    font-size: 21px;
+    font-size: 20px;
     float: right;
     font-family: "JosefinSansR";
     font-weight: 500;
     word-spacing: 10px;
-    
-}
+}   
 
 .qui span{
     font-family: "JosefinSansSB";
@@ -273,7 +308,7 @@ h2{
 }
 
 .bg-light-gray {
-    background-color: #f7f7f7;
+    background-color: rgb(231, 64, 62);
 }
 
 .bg-darkest-gray {
@@ -282,8 +317,8 @@ h2{
 
 .btn-primary {
     color: #fff;
-    background-color: #fed136;
-    border-color: #fed136;
+    background-color: rgba(233, 169, 43, 0.9);
+    border-color: white;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700
@@ -295,7 +330,7 @@ h2{
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
     color: #fff;
-    background-color: #fec503;
+    background-color: rgba(233, 169, 43, 0.6);
     border-color: white;
 }
 
@@ -475,10 +510,10 @@ header img{
     margin-top: -50px;
 }
 
-.photo_profile{
-  
-}
+.photo_profile:hover{
+    
 
+}
 
 /*---------------------PLEINE PAGE PAS RESPONSIVE---------------------*/
 @media (min-width:768px) {
@@ -538,8 +573,9 @@ header img{
     
 }
 }
-
-
+.loisir{
+    color: white;
+}
 
 section {
     padding: 100px 0
@@ -568,6 +604,11 @@ section h3.section-subheading {
     section {
         padding: 150px 0
     }
+    .back_qui{
+    background-image: url(../img/home/half_3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 }
 
 .service-heading {
@@ -588,7 +629,7 @@ section h3.section-subheading {
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
-    background: rgba(254, 209, 54, .9);
+    background: rgba(233, 169, 43, 0.9);
     position: absolute;
     width: 100%;
     height: 100%;
@@ -625,21 +666,22 @@ section h3.section-subheading {
 #portfolio .portfolio-item .portfolio-caption {
     max-width: 400px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: rgba(249, 170, 137, 0.7);
     text-align: center;
     padding: 25px
 }
 
 #portfolio .portfolio-item .portfolio-caption h4 {
     text-transform: none;
-    margin: 0
+    margin: 0;
+    color: white;
 }
 
 #portfolio .portfolio-item .portfolio-caption p {
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-style: italic;
+    font-family: "CaviarDreams";
     font-size: 16px;
-    margin: 0
+    margin: 0;
+    color: white;
 }
 
 #portfolio * {
@@ -658,6 +700,7 @@ section h3.section-subheading {
     position: relative
 }
 
+@media (min-width:767px){
 .timeline:before {
     top: 0;
     bottom: 0;
@@ -668,7 +711,8 @@ section h3.section-subheading {
     left: 40px;
     margin-left: -1.5px;
     height: 980px;
-    
+    background-image: url()
+}
 }
 
 .timeline>li {
@@ -858,36 +902,55 @@ section h3.section-subheading {
 
 .team-member img {
     margin: 0 auto;
-    border: 7px solid #fff
 }
 
 .team-member h4 {
     margin-top: 25px;
     margin-bottom: 0;
-    text-transform: none
+    text-transform: uppercase;
+    color: rgb(247, 183, 156);
+    text-shadow: 2px 2px 4px rgba(245,164,107, 1);;
 }
 
 .team-member p {
-    margin-top: 0
+    margin-top: 0;
+    text-transform: uppercase;
+
+}
+
+.loisir_puce{
+    color: white;
+    font-family: "JosefinSansR";
+    font-size: 18px;
+    text-align: justify;
 }
 
 aside.clients img {
     margin: 50px auto
 }
 
+.form-control{
+    text-transform: uppercase;
+    font-family: "JosefinSansR";
+    color: #ff9966;
+    border: 2px solid #ff9966;
+}
+
 section#contact {
-    background-color: #222;
-    background-image: url(../img/map-image.png);
+    background-color: white;
+    background-image: url(../img/contact_background.png);
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat
 }
 
 section#contact .section-heading {
-    color: #fff
+    color: ;
 }
 
 section#contact .form-group {
-    margin-bottom: 25px
+    margin-bottom: 25px;
+    color: #ff9966;
 }
 
 section#contact .form-group input,
@@ -896,11 +959,12 @@ section#contact .form-group textarea {
 }
 
 section#contact .form-group input.form-control {
-    height: auto
+    height: auto;
+    
 }
 
 section#contact .form-group textarea.form-control {
-    height: 236px
+    height: 236px;
 }
 
 section#contact .form-control:focus {
@@ -942,22 +1006,22 @@ section#contact .text-danger {
 
 footer {
     padding: 25px 0;
-    text-align: center
+    text-align: center;
+    background-image: url(../img/home/big_light.jpg);
 }
 
 footer span.copyright {
     line-height: 40px;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "JosefinSansR", Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif;
     text-transform: uppercase;
-    text-transform: none
+    color: white;
 }
 
 footer ul.quicklinks {
     margin-bottom: 0;
     line-height: 40px;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "JosefinSansR", Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif;
     text-transform: uppercase;
-    text-transform: none
 }
 
 ul.social-buttons {
@@ -966,7 +1030,7 @@ ul.social-buttons {
 
 ul.social-buttons li a {
     display: block;
-    background-color: #222;
+    background-color: #ff6666;
     height: 40px;
     width: 40px;
     border-radius: 100%;
@@ -1005,23 +1069,26 @@ ul.social-buttons li a:active {
 
 .portfolio-modal .modal-content h2 {
     margin-bottom: 15px;
-    font-size: 3em
+    font-size: 3em;
 }
 
 .portfolio-modal .modal-content p {
-    margin-bottom: 30px
+    margin-bottom: 30px;
+    font-family: "JosefinSansR";
+    font-size: 18px;
 }
 
 .portfolio-modal .modal-content p.item-intro {
     margin: 20px 0 30px;
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-style: italic;
-    font-size: 16px
+    font-family: "CaviarDreams", Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 17px;
 }
 
 .portfolio-modal .modal-content ul.list-inline {
     margin-bottom: 30px;
-    margin-top: 0
+    margin-top: 0;
+    font-family: "JosefinSansSB";
+    font-size: 18px;
 }
 
 .portfolio-modal .modal-content img {
@@ -1033,7 +1100,6 @@ ul.social-buttons li a:active {
     width: 75px;
     height: 75px;
     background-color: transparent;
-    top: 25px;
     right: 25px;
     cursor: pointer
 }
