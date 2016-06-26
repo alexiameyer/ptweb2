@@ -288,7 +288,6 @@ a.active {
 }
 
 h1,
-h3,
 h4,
 h5,
 h6 {
@@ -308,7 +307,11 @@ h2{
 }
 
 .bg-light-gray {
-    background-color: rgb(231, 64, 62);
+    background-color: white;
+    background-image: url(../img/bg_loisir_contact.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
 }
 
 .bg-darkest-gray {
@@ -600,20 +603,13 @@ vertical-align: top;
 }
 
 
-section h3.section-subheading {
-    font-size: 16px;
-    font-family: "JosefinSansR", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: none;
-    font-weight: 400;
-    margin-bottom: 75px;
-}
-
 @media (min-width:768px) {
     section {
         padding: 150px 0
     }
+    
     .back_qui{
-    background-image: url(../img/home/half_3.png);
+    background-image: url(../img/half_1.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -945,11 +941,7 @@ aside.clients img {
 }
 
 section#contact {
-    background-color: white;
-    background-image: url(../img/contact_background.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat
+    
 }
 
 section#contact .section-heading {
@@ -1012,10 +1004,26 @@ section#contact .text-danger {
     color: #e74c3c
 }
 
+.contact{
+    color: white;
+    font-size: 20px;
+    font-family: "JosefinSansR";
+}
+
+section h3.contact, section-subheading {
+    font-size: 20px;
+    font-family: "JosefinSansR", Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-transform: none;
+    font-weight: 400;
+    margin-bottom: 75px;
+}
+
 footer {
     padding: 25px 0;
     text-align: center;
     background-image: url(../img/home/big_light.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 footer span.copyright {
