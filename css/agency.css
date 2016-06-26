@@ -95,7 +95,7 @@
     .navbar-custom.top-nav-collapse {
         border-bottom: 1px solid rgba(255,255,255,.3);
     }
-	  
+   	  
 }
 
 /* ------- Navigation ------------ */
@@ -510,10 +510,10 @@ header img{
     margin-top: -50px;
 }
 
-.photo_profile:hover{
-    
-
+    img.photo_profile {
+    width: 250px;
 }
+
 
 /*---------------------PLEINE PAGE PAS RESPONSIVE---------------------*/
 @media (min-width:768px) {
@@ -533,6 +533,18 @@ header img{
         margin-top: 50px;
         
     }
+    
+      img.photo_profile {
+    width: 600px;
+
+}
+    
+    .arrow{
+    width: 40px;
+    height: 50px;
+    padding: auto;
+    margin: auto;
+}
     
      header .intro-text .intro-heading {
         font-family: "JosefinSansR";
@@ -564,15 +576,11 @@ header img{
     margin-bottom: -290px;
     margin-top: -430px
 }
-    
-    .arrow{
-    width: 40px;
-    height: 50px;
-    padding: auto;
-    margin: auto;
-    
 }
-}
+
+/*en responsive on ne veux pas afficher les flèches de scroll*/
+
+
 .loisir{
     color: white;
 }
